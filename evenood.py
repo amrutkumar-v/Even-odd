@@ -1,9 +1,12 @@
-def even_odd():
-    n = int(input("Enter a number: "))
+import sys
 
+def even_odd(n):
     if n % 2 == 0:
-        print("Even number")
+        return "Even number"
     else:
-        print("Odd number")
+        return "Odd number"
 
-even_odd()
+if __name__ == "__main__":
+    num = int(sys.argv[1])
+    print("Number:", num)
+    print("Result:", even_odd(num))
